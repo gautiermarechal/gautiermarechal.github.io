@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
+import { makeStyles } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import TopPart from './components/TopPart';
 import './App.css';
+import TopBar from './components/TopBar';
+import Projects from './components/Projects';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const useStyles = makeStyles(theme => ({
+    appRoot: {
+      backgroundColor: '#F0F8FF',
+      height: '100%',
+    },
+    header: {
+      minHeight: '100vh',
+      paddingTop: '300px',
+      color: 'white',
+      },
+}));
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Montserrat',
+      'sans-serif'
+    ].join(','),
+  }
+});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ThemeProvider theme={theme}>
+    <div className={classes.appRoot}>
+      <TopBar />
+      <TopPart/>
+      <Projects/>
     </div>
+    </ThemeProvider>
   );
 }
 
