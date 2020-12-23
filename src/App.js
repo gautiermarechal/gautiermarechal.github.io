@@ -1,45 +1,21 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
-import TopPart from './components/TopPart';
-import './App.css';
-import TopBar from './components/TopBar';
-import Projects from './components/Projects';
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+import React from "react";
+import styled from "styled-components";
+import Description from "./components/Description";
+import GlobalStyles from "./components/GlobalStyles";
+import Introduction from "./components/Introduction";
+import Projects from "./components/Projects";
+import SingleProject from "./components/SingleProject";
 
-const useStyles = makeStyles(theme => ({
-    appRoot: {
-      backgroundColor: '#F0F8FF',
-      height: '100%',
-    },
-    header: {
-      minHeight: '100vh',
-      paddingTop: '300px',
-      color: 'white',
-      },
-}));
-
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: [
-      'Montserrat',
-      'sans-serif'
-    ].join(','),
-  }
-});
-
-function App() {
-  const classes = useStyles();
+const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-    <div className={classes.appRoot}>
-      <TopBar />
-      <TopPart/>
-      <Projects/>
-    </div>
-    </ThemeProvider>
+    <>
+      <GlobalStyles />
+      <Introduction />
+      <Description />
+      <Projects />
+      <SingleProject />
+    </>
   );
-}
+};
 
 export default App;
