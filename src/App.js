@@ -5,6 +5,7 @@ import GlobalStyles from "./components/GlobalStyles";
 import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
 import SingleProject from "./components/SingleProject";
+import { PROJECTS } from "./data/projects";
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
       <Introduction />
       <Description />
       <Projects />
-      <SingleProject />
+      {PROJECTS.map((project) => {
+        return <SingleProject project={project} />;
+      })}
     </>
   );
 };

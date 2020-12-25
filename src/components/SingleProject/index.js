@@ -4,23 +4,32 @@ import { COLORS } from "../../constants/colors";
 import SnippetSrc from "../../images/CTD-Snippet.png";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const SingleProject = () => {
+const SingleProject = ({ project }) => {
+  const baseUrl = "../../images/";
+  console.log(baseUrl + project.thumbnail);
   return (
     <>
       <ScrollAnimation animateIn="fadeInLeft">
         <Container>
           <Content>
-            <Title>Connect the dots</Title>
-            <SubTitle href="https://www.youtube.com/watch?v=jYNo8yybQCk&ab_channel=GautierMarechal">
-              Demo
-            </SubTitle>
-            <Description>
-              This website is a tool that allows people to connect concepts of a
-              book to any concepts of any other book. By creating this project,
-              my will was to facilitate the process of joining ideas together
-              when reading books.
-            </Description>
-            <ProjectSnippet src={SnippetSrc} />
+            <HeaderContainer>
+              <Title href={project.link} target="_blank">
+                {project.title}
+              </Title>
+              <Date>{project.date}</Date>
+            </HeaderContainer>
+
+            <LinksContainer>
+              <SubTitle href={project.demo} target="_blank">
+                Demo
+              </SubTitle>
+              <Line />
+              <SubTitle href={project.github} target="_blank">
+                Github
+              </SubTitle>
+            </LinksContainer>
+            <Description>{project.description}</Description>
+            <ProjectSnippet src={require(`${baseUrl}${project.thumbnail}`)} />
           </Content>
         </Container>
       </ScrollAnimation>
@@ -42,15 +51,41 @@ const Content = styled.div`
   width: 700px;
 `;
 
-const Title = styled.h1`
+const LinksContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Date = styled.p`
+  color: ${COLORS.pacificBlue};
+`;
+
+const Title = styled.a`
+  font-size: 40px;
+  margin-bottom: 10px;
   cursor: pointer;
   width: fit-content;
   padding: 10px 10px 10px 0px;
-  border-bottom: solid transparent 3px;
+  border-bottom: solid transparent 4px;
   transition: 0.5s;
   &:hover {
-    border-bottom: solid ${COLORS.red} 3px;
+    border-bottom: solid ${COLORS.red} 4px;
   }
+`;
+
+const Line = styled.hr`
+  width: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${COLORS.red};
+  margin: 0px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 `;
 
 const SubTitle = styled.a`
@@ -61,6 +96,7 @@ const SubTitle = styled.a`
   &:hover {
     border-bottom: solid ${COLORS.red} 3px;
   }
+  margin-right: 10px;
 `;
 
 const Description = styled.p`
