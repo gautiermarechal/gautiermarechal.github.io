@@ -59,6 +59,9 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 700px;
+  @media (max-width: 750px) {
+    margin: 50px;
+  }
 `;
 
 const GreetingsContainer = styled.div`

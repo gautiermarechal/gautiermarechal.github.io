@@ -28,6 +28,13 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 700px;
+  @media (max-width: 750px) {
+    margin: 0px 30px 0px 30px;
+  }
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 12vw;
+    }
 `;
 
 const Title = styled.h1`

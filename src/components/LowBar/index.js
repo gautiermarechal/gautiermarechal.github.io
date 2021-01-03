@@ -47,7 +47,7 @@ const ActionBar = styled.div`
   display: flex;
   margin-right: 20px;
   margin-bottom: 20px;
-  animation: 0.5s ${animation};
+  animation: 1s ${animation};
 `;
 
 const IconButton = styled.button`

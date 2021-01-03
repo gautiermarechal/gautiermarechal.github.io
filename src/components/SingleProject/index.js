@@ -37,6 +37,9 @@ const SingleProject = ({ project }) => {
             />
           </Content>
         </Container>
+        <SeparateLineContainer>
+          <SeparateLine />
+        </SeparateLineContainer>
       </ScrollAnimation>
     </>
   );
@@ -48,12 +51,19 @@ const Container = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
+  @media (max-width: 820px) {
+    height: auto;
+  }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 700px;
+
+  @media (max-width: 810px) {
+    margin: 30px;
+  }
 `;
 
 const LinksContainer = styled.div`
@@ -64,6 +74,9 @@ const LinksContainer = styled.div`
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 
 const Date = styled.p`
@@ -91,6 +104,24 @@ const Line = styled.hr`
   margin: 0px;
   margin-right: 10px;
   margin-bottom: 5px;
+`;
+
+const SeparateLineContainer = styled.div`
+  display: none;
+  width: 100%;
+  justify-content: center;
+  @media (max-width: 820px) {
+    display: flex;
+  }
+`;
+
+const SeparateLine = styled.hr`
+  width: 80%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${COLORS.red};
+  margin: 0px;
+  margin-top: 70px;
 `;
 
 const SubTitle = styled.a`
