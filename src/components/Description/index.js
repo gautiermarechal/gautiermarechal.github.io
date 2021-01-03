@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Description = () => {
   return (
     <>
-      <ScrollAnimation animateIn="fadeInLeft">
+      <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
         <Container>
           <Content>
             <Title>Who am I?</Title>

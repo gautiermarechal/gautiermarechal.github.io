@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Projects = () => {
   return (
     <>
-      <ScrollAnimation animateIn="fadeInLeft">
+      <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
         <Container>
           <Content>
             <Title>Projects</Title>

@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     id: 0,
     title: "Twitter Organizer",
-    link: "",
+    link: "https://github.com/gautiermarechal/twitter_organizer_front_end",
     description:
       "Developing a Twitter bot that allows the user to categorize a tweet or a thread under a category. The tweet will be sent to the database and be rendered on the web app where the user can log in and browse all categorized tweets and all categories.",
     demo: " ​https://github.com/gautiermarechal/twitter_organizer_front_end",
@@ -25,7 +25,8 @@ export const PROJECTS = [
   {
     id: 2,
     title: "Booking Appointment System",
-    link: "",
+    link:
+      "https://github.com/gautiermarechal/booking-appointment-system-m-corte",
     description:
       "Developed a booking system for a barber shop in Montreal. The customer can book a time slot with a chosen barber. The barbers have an admin platform to manage appointments.",
     demo:
@@ -37,6 +38,17 @@ export const PROJECTS = [
   },
   {
     id: 3,
+    title: "Bitcoin Profitable Days Chart",
+    link: "https://github.com/gautiermarechal/btc-profitable-days-chart",
+    description:
+      "Created a chart that displays all the days when it would have been profitable to buy BTC, compared to today's price. Profitable days are in green, and non-profitable in red.",
+    demo: "https://github.com/gautiermarechal/btc-profitable-days-chart",
+    github: "https://github.com/gautiermarechal/btc-profitable-days-chart",
+    thumbnail: "btc.gif",
+    date: "May 2020",
+  },
+  {
+    id: 4,
     title: "Photographer Portfolio",
     link: "http://mathieutranchida.com/",
     description:

@@ -28,10 +28,17 @@ const Introduction = () => {
           </Text>
           <ActionBar>
             <IconButton>
-              <AiFillLinkedin />
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/gautiermarechal/"
+              >
+                <AiFillLinkedin />
+              </a>
             </IconButton>
             <IconButton>
-              <AiFillGithub />
+              <a target="_blank" href="https://github.com/gautiermarechal">
+                <AiFillGithub />
+              </a>
             </IconButton>
           </ActionBar>
         </Content>
@@ -43,7 +50,7 @@ const Introduction = () => {
 const Container = styled(animated.div)`
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   justify-content: center;
   align-items: center;
 `;

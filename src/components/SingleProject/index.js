@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 import SnippetSrc from "../../images/CTD-Snippet.png";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SingleProject = ({ project }) => {
-  const baseUrl = "../../images/";
-  console.log(baseUrl + project.thumbnail);
+  const [imageSrc, setImageSrc] = useState();
+  useEffect(() => {
+    setImageSrc(project.thumbnail);
+  }, []);
   return (
     <>
-      <ScrollAnimation animateIn="fadeInLeft">
+      <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
         <Container>
           <Content>
             <HeaderContainer>
@@ -29,7 +31,10 @@ const SingleProject = ({ project }) => {
               </SubTitle>
             </LinksContainer>
             <Description>{project.description}</Description>
-            <ProjectSnippet src={require(`${baseUrl}${project.thumbnail}`)} />
+            <ProjectSnippet
+              src={require(`../../images/${project.thumbnail}`)}
+              alt={"image"}
+            />
           </Content>
         </Container>
       </ScrollAnimation>
@@ -108,6 +113,7 @@ const ProjectSnippet = styled.img`
   width: 100%;
   border: none;
   margin-top: 20px;
+  border-radius: 7px;
 `;
 
 export default SingleProject;
