@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { useAppContext } from "../../context/appContext";
 import { COLORS } from "../../constants/colors";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import { useSpring, animated } from "react-spring";
 import { lightSpeedIn } from "react-animations";
 
@@ -33,6 +34,11 @@ const LowBar = () => {
           <IconButton>
             <a target="_blank" href="https://github.com/gautiermarechal">
               <AiFillGithub />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a target="_blank" href="mailto:gaut.marechal@gmail.com">
+              <MdEmail />
             </a>
           </IconButton>
         </ActionBar>

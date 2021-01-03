@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import profilePicSrc from "../../images/profile_gaut.jpg";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+
 import { COLORS } from "../../constants/colors";
 import { useSpring, animated } from "react-spring";
 
@@ -38,6 +40,11 @@ const Introduction = () => {
             <IconButton>
               <a target="_blank" href="https://github.com/gautiermarechal">
                 <AiFillGithub />
+              </a>
+            </IconButton>
+            <IconButton>
+              <a target="_blank" href="mailto:gaut.marechal@gmail.com">
+                <MdEmail />
               </a>
             </IconButton>
           </ActionBar>
