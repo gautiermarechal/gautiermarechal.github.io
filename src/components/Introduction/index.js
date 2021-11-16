@@ -25,8 +25,7 @@ const Introduction = () => {
             <Greetings>Bonjour, Hi!</Greetings>
           </GreetingsContainer>
           <Text>
-            I'm Gautier, a recent Web Development Graduate, in love of building
-            things, from software to electronics.
+            I'm Gautier, a junior Web Developer, in love of building things.
           </Text>
           <ActionBar>
             <IconButton>
@@ -95,7 +94,6 @@ const ActionBar = styled.div`
 `;
 
 const IconButton = styled.button`
-  background-color: none;
   border-radius: 100%;
   height: 50px;
   width: 50px;
@@ -103,8 +101,7 @@ const IconButton = styled.button`
   cursor: pointer;
   background-color: transparent;
   transition: 0.5s;
-  margin-left: 10px;
-
+  padding: 0px;
   svg {
     height: 30px;
     width: 30px;

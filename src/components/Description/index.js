@@ -10,14 +10,13 @@ const Description = () => {
           <Content>
             <Title>Who am I?</Title>
             <Text>
-              I am a passionate of creating. Recently graduated from university,
-              I decided to pursue a web development bootcamp to solidify my
-              skills. Now I use software development to fulfill my interest in
-              building things.
+              I am a passionate of creating. Software development has been a
+              great way to fulfill this passion since 1 and a half years.
             </Text>
             <Text>
-              In my free time, I like to read books, build personal projects and
-              play basketball!📚 ⚡️ 🏀
+              I am also a huge fan of <strong>Bitcoin</strong> and currently
+              learning <strong>Lightning Network</strong> development ⚡️. My
+              free time also goes to Arduino and woodworking!
             </Text>
           </Content>
         </Container>
