@@ -1,0 +1,51 @@
+{
+  "introduction": {
+    "hi": "Hi!",
+    "intro": "I'm Gautier, a junior Web Developer, in love of building things."
+  },
+  "description": {
+    "who": "Who am I?",
+    "text0": "I am a passionate of creating. Software development has been a great way to fulfill this passion since 1 and a half years.",
+    "text1": "I am also a huge fan of Bitcoin and currently learning Lightning Network development ⚡️. My free time also goes to Arduino, woodworking and reading!"
+  },
+  "projects": {
+    "title": "Projects",
+    "demo": "demo",
+    "github": "github",
+    "singular": {
+      "title": "Singular",
+      "date": "September 2021 - December 2021",
+      "description": "Developing a data aggregator for music events organizers, in order to facilitate the process of finding new artists for the shows. All the data comes from different APIs of the music industry. This project is a freelance mission."
+    },
+    "destination365": {
+      "title": "Destination 365",
+      "date": "January 2021 - November 2021",
+      "description": "We work as a team of 6 developers under the AGILE method, on a project called Destination 365. The platform allows on-site shows to acquire an online presence for their participants. Users can attend sessions, connect to exhibitors, and many other possibilities."
+    },
+    "twitterOrg": {
+      "title": "Twitter Organizer",
+      "date": "August 2020 - December 2020",
+      "description": "Developing a Twitter bot that allows the user to categorize a tweet or a thread under a category. The tweet will be sent to the database and be rendered on the web app where the user can log in and browse all categorized tweets and all categories."
+    },
+    "connectTheDots": {
+      "title": "Connect The Dots",
+      "date": "December 2020",
+      "description": "Developed a web app where users can connect books by their concepts. The user can choose 2 or more books and post a connection as an article or a template that we provide on the platform. The user can also view other people's connections."
+    },
+    "bookingSystem": {
+      "title": "Booking Appointment System",
+      "date": "August 2020",
+      "description": "Developed a booking system for a barber shop in Montreal. The customer can book a time slot with a chosen barber. The barbers have an admin platform to manage appointments."
+    },
+    "btcProfitable": {
+      "title": "Bitcoin Profitable Days Chart",
+      "date": "May 2020",
+      "description": "Created a chart that displays all the days when it would have been profitable to buy BTC, compared to today's price. Profitable days are in green, and non-profitable in red."
+    },
+    "photographerPortfolio": {
+      "title": "Photographer Portfolio",
+      "date": "January 2020",
+      "description": "Created a professional photographer portfolio. Designed beautiful photo grids and created an email form to send to the photographer for any sale enquiry."
+    }
+  }
+}

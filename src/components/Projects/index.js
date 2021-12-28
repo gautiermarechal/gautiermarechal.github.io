@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { useTranslation } from "react-i18next";
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <>
       <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
         <Container>
           <Content>
-            <Title>Projects</Title>
+            <Title>{t("projects.title")}</Title>
           </Content>
         </Container>
       </ScrollAnimation>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 import SnippetSrc from "../../images/CTD-Snippet.png";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { useTranslation } from "react-i18next";
 const SingleProject = ({ project }) => {
   const [imageSrc, setImageSrc] = useState();
   useEffect(() => {

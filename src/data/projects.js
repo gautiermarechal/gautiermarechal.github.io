@@ -9,7 +9,7 @@ export const PROJECTS = [
     date: "September 2021 - December 2021",
   },
   {
-    id: 0,
+    id: 1,
     title: "Destination 365",
     link: "https://destination365.develop.sherpaserv.com/",
     description:
@@ -18,7 +18,7 @@ export const PROJECTS = [
     date: "January 2021 - November 2021",
   },
   {
-    id: 1,
+    id: 2,
     title: "Twitter Organizer",
     link: "https://github.com/gautiermarechal/twitter_organizer_front_end",
     description:
@@ -29,7 +29,7 @@ export const PROJECTS = [
     date: "August 2020 - December 2020",
   },
   {
-    id: 2,
+    id: 3,
     title: "Connect The Dots",
     link: "https://connectthedots-514.herokuapp.com/",
     description:
@@ -40,7 +40,7 @@ export const PROJECTS = [
     date: "December 2020",
   },
   {
-    id: 3,
+    id: 4,
     title: "Booking Appointment System",
     link: "https://github.com/gautiermarechal/booking-appointment-system-m-corte",
     description:
@@ -52,7 +52,7 @@ export const PROJECTS = [
     date: "August 2020",
   },
   {
-    id: 4,
+    id: 5,
     title: "Bitcoin Profitable Days Chart",
     link: "https://github.com/gautiermarechal/btc-profitable-days-chart",
     description:
@@ -63,7 +63,7 @@ export const PROJECTS = [
     date: "May 2020",
   },
   {
-    id: 5,
+    id: 6,
     title: "Photographer Portfolio",
     link: "http://mathieutranchida.com/",
     description:

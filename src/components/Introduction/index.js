@@ -3,11 +3,12 @@ import styled from "styled-components";
 import profilePicSrc from "../../images/profile_gaut.jpg";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-
+import { useTranslation } from "react-i18next";
 import { COLORS } from "../../constants/colors";
 import { useSpring, animated } from "react-spring";
 
 const Introduction = () => {
+  const { t } = useTranslation();
   const animation = useSpring({
     transform: "translate3D(0,0,0)",
     opacity: 1,
@@ -22,11 +23,9 @@ const Introduction = () => {
         <Content>
           <GreetingsContainer>
             <ProfilePicture src={profilePicSrc} />
-            <Greetings>Bonjour, Hi!</Greetings>
+            <Greetings>{t("introduction.hi")}</Greetings>
           </GreetingsContainer>
-          <Text>
-            I'm Gautier, a junior Web Developer, in love of building things.
-          </Text>
+          <Text>{t("introduction.intro")} </Text>
           <ActionBar>
             <IconButton>
               <a
@@ -59,6 +58,7 @@ const Container = styled(animated.div)`
   height: 101vh;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 const Content = styled.div`
@@ -113,6 +113,12 @@ const IconButton = styled.button`
       fill: white;
     }
   }
+`;
+
+const LanguageSwitcher = styled(IconButton)`
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
 
 export default Introduction;

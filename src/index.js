@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { AppContextProvider } from "./context/appContext";
+import "./i18n/config";
 
 ReactDOM.render(
   <AppContextProvider>

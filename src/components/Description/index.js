@@ -1,23 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useTranslation } from "react-i18next";
 
 const Description = () => {
+  const { t } = useTranslation();
   return (
     <>
       <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
         <Container>
           <Content>
-            <Title>Who am I?</Title>
-            <Text>
-              I am a passionate of creating. Software development has been a
-              great way to fulfill this passion since 1 and a half years.
-            </Text>
-            <Text>
-              I am also a huge fan of <strong>Bitcoin</strong> and currently
-              learning <strong>Lightning Network</strong> development ⚡️. My
-              free time also goes to Arduino and woodworking!
-            </Text>
+            <Title>{t("description.who")}</Title>
+            <Text>{t("description.text0")}</Text>
+            <Text>{t("description.text1")}</Text>
           </Content>
         </Container>
       </ScrollAnimation>
