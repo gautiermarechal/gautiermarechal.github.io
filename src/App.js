@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Description from "./components/Description";
 import GlobalStyles from "./components/GlobalStyles";
@@ -12,9 +12,10 @@ import useOnScreen from "./custom-hooks/useOnScreen";
 import { PROJECTS } from "./data/projects";
 import i18n from "i18next";
 import { PROJECTS_FR } from "./data/projectsFR";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
-  const language = i18n.language;
+  const { i18n } = useTranslation();
   const ref = React.useRef();
   const isVisible = useOnScreen(ref);
   const appState = useAppContext();
@@ -23,6 +24,9 @@ const App = () => {
   } else {
     appState.handleState(false);
   }
+  useEffect(() => {
+    console.log(i18n.language);
+  }, [i18n]);
   return (
     <>
       <GlobalStyles />
@@ -32,7 +36,7 @@ const App = () => {
         <LowBar />
         <Description />
         <Projects />
-        {language === "en"
+        {i18n.language === "en"
           ? PROJECTS.map((project) => {
               return <SingleProject project={project} />;
             })

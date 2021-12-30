@@ -7,6 +7,7 @@ export const PROJECTS_FR = [
       "Développement d'un agrégateur de données pour les organisateurs d'événements musicaux, afin de faciliter le processus de recherche de nouveaux artistes pour les spectacles. Toutes les données proviennent de différentes API de l'industrie musicale. Ce projet est dans le cadre d'une mission freelance.",
     thumbnail: "Singular.png",
     date: "Septembre 2021 - Décembre 2021",
+    stack: ["Vue", "Nuxt", "Typescript", "Tailwind"],
   },
   {
     id: 1,
@@ -16,6 +17,7 @@ export const PROJECTS_FR = [
       "Nous travaillons en équipe de 6 développeurs selon la méthode AGILE, sur un projet appelé Destination 365. La plateforme permet aux salons sur site d'acquérir une présence en ligne pour leurs participants. Les utilisateurs peuvent assister à des sessions, se connecter aux exposants et bien d'autres possibilités. Ce projet s'est deroulé dans le cadre de mon experience chez Sherpa Solutions à Montréal, Canada.",
     thumbnail: "365.png",
     date: "Janvier 2021 - Novembre 2021",
+    stack: ["Vue", "Typescript", "GraphQL"],
   },
   {
     id: 2,
@@ -27,6 +29,15 @@ export const PROJECTS_FR = [
     github: " ​https://github.com/gautiermarechal/twitter_organizer_front_end",
     thumbnail: "Twitter_Organizer-Snippet.png",
     date: "Aout 2020 - Aout 2020",
+    stack: [
+      "React",
+      "Javascript",
+      "NodeJS",
+      "Express",
+      "PostgresSQL",
+      "Python",
+      "Twitter API",
+    ],
   },
   {
     id: 3,
@@ -38,10 +49,18 @@ export const PROJECTS_FR = [
     github: "https://github.com/gautiermarechal/connect_the_dots",
     thumbnail: "CTD-Snippet.png",
     date: "Décembre 2020",
+    stack: [
+      "React",
+      "Javascript",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Styled-components",
+    ],
   },
   {
     id: 4,
-    title: "Système de réservation de rendez-vous",
+    title: "Système de réservation",
     link: "https://github.com/gautiermarechal/booking-appointment-system-m-corte",
     description:
       "Développement d'un système de réservation pour un salon de coiffure à Montréal. Le client peut réserver un créneau horaire avec un barbier de son choix. Les barbiers disposent d'une plateforme d'administration pour gérer les rendez-vous.",
@@ -50,10 +69,11 @@ export const PROJECTS_FR = [
       "https://github.com/gautiermarechal/booking-appointment-system-m-corte",
     thumbnail: "BAS-Snippet.png",
     date: "Aout 2020",
+    stack: ["React", "Javascript", "NodeJS", "Express", "MongoDB"],
   },
   {
     id: 5,
-    title: "Graphique des jours rentables de Bitcoin",
+    title: "Graphique jours rentables Bitcoin",
     link: "https://github.com/gautiermarechal/btc-profitable-days-chart",
     description:
       "Création d'un graphique qui affiche tous les jours où il aurait été rentable d'acheter du BTC, par rapport au prix d'aujourd'hui. Les jours rentables sont en vert et non rentables en rouge.",
@@ -61,6 +81,7 @@ export const PROJECTS_FR = [
     github: "https://github.com/gautiermarechal/btc-profitable-days-chart",
     thumbnail: "btc.gif",
     date: "Mai 2020",
+    stack: ["React", "Javascript", "Recharts", "Bitcoin API"],
   },
   {
     id: 6,
@@ -72,5 +93,6 @@ export const PROJECTS_FR = [
     github: "https://github.com/gautiermarechal/mathieu_portfolio",
     thumbnail: "Mat-Snippet.png",
     date: "Janvier 2020",
+    stack: ["React", "Javascript", "EmailJS"],
   },
 ];

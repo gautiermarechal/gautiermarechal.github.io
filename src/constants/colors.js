@@ -4,4 +4,5 @@ export const COLORS = {
   corn: "#F5E663",
   rajah: "#FFAD69",
   red: "#9C3848",
+  slateGray: "#708090",
 };

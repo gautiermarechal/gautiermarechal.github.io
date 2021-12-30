@@ -22,7 +22,9 @@ const Introduction = () => {
       <Container style={animation}>
         <Content>
           <GreetingsContainer>
-            <ProfilePicture src={profilePicSrc} />
+            <ImageContainer>
+              <ProfilePicture src={profilePicSrc} />
+            </ImageContainer>
             <Greetings>{t("introduction.hi")}</Greetings>
           </GreetingsContainer>
           <Text>{t("introduction.intro")} </Text>
@@ -41,7 +43,7 @@ const Introduction = () => {
               </a>
             </IconButton>
             <IconButton>
-              <a target="_blank" href="mailto:gaut.marechal@gmail.com">
+              <a target="_blank" href="mailto:gautier.marechal@gaut.io">
                 <MdEmail />
               </a>
             </IconButton>
@@ -75,9 +77,17 @@ const GreetingsContainer = styled.div`
   align-items: center;
 `;
 
+const ImageContainer = styled.div`
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100%;
+`;
+
 const ProfilePicture = styled.img`
-  border-radius: 50%;
   height: 80px;
+  width: 80px;
+  object-fit: cover;
+  transform: scale(1.35);
 `;
 
 const Greetings = styled.h1`

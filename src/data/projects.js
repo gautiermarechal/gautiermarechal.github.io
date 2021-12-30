@@ -7,6 +7,7 @@ export const PROJECTS = [
       "Developing a data aggregator for music events organizers, in order to facilitate the process of finding new artists for the shows. All the data comes from different APIs of the music industry. This project is a freelance mission",
     thumbnail: "Singular.png",
     date: "September 2021 - December 2021",
+    stack: ["Vue", "Nuxt", "Typescript", "Tailwind"],
   },
   {
     id: 1,
@@ -16,6 +17,7 @@ export const PROJECTS = [
       "We work as a team of 6 developers under the AGILE method, on a project called Destination 365. The platform allows on-site shows to acquire an online presence for their participants. Users can attend sessions, connect to exhibitors, and many other possibilities.",
     thumbnail: "365.png",
     date: "January 2021 - November 2021",
+    stack: ["Vue", "Typescript", "GraphQL"],
   },
   {
     id: 2,
@@ -27,6 +29,15 @@ export const PROJECTS = [
     github: " ​https://github.com/gautiermarechal/twitter_organizer_front_end",
     thumbnail: "Twitter_Organizer-Snippet.png",
     date: "August 2020 - December 2020",
+    stack: [
+      "React",
+      "Javascript",
+      "NodeJS",
+      "Express",
+      "PostgresSQL",
+      "Python",
+      "Twitter API",
+    ],
   },
   {
     id: 3,
@@ -38,6 +49,14 @@ export const PROJECTS = [
     github: "https://github.com/gautiermarechal/connect_the_dots",
     thumbnail: "CTD-Snippet.png",
     date: "December 2020",
+    stack: [
+      "React",
+      "Javascript",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Styled-components",
+    ],
   },
   {
     id: 4,
@@ -50,6 +69,7 @@ export const PROJECTS = [
       "https://github.com/gautiermarechal/booking-appointment-system-m-corte",
     thumbnail: "BAS-Snippet.png",
     date: "August 2020",
+    stack: ["React", "Javascript", "NodeJS", "Express", "MongoDB"],
   },
   {
     id: 5,
@@ -61,6 +81,7 @@ export const PROJECTS = [
     github: "https://github.com/gautiermarechal/btc-profitable-days-chart",
     thumbnail: "btc.gif",
     date: "May 2020",
+    stack: ["React", "Javascript", "Recharts", "Bitcoin API"],
   },
   {
     id: 6,
@@ -72,5 +93,6 @@ export const PROJECTS = [
     github: "https://github.com/gautiermarechal/mathieu_portfolio",
     thumbnail: "Mat-Snippet.png",
     date: "January 2020",
+    stack: ["React", "Javascript", "EmailJS"],
   },
 ];

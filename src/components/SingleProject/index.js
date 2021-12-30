@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
-import SnippetSrc from "../../images/CTD-Snippet.png";
 import ScrollAnimation from "react-animate-on-scroll";
-import { useTranslation } from "react-i18next";
 const SingleProject = ({ project }) => {
   const [imageSrc, setImageSrc] = useState();
   useEffect(() => {
@@ -20,7 +18,11 @@ const SingleProject = ({ project }) => {
               </Title>
               <Date>{project.date}</Date>
             </HeaderContainer>
-
+            <StackContainer>
+              {project.stack.map((tech) => (
+                <StackTitle>{tech}</StackTitle>
+              ))}
+            </StackContainer>
             <LinksContainer>
               <SubTitle href={project.demo} target="_blank">
                 Demo
@@ -47,6 +49,8 @@ const SingleProject = ({ project }) => {
 
 const Container = styled.div`
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -71,6 +75,12 @@ const LinksContainer = styled.div`
   align-items: center;
 `;
 
+const StackContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -88,9 +98,10 @@ const Title = styled.a`
   margin-bottom: 10px;
   cursor: pointer;
   width: fit-content;
-  padding: 10px 10px 10px 0px;
   border-bottom: solid transparent 4px;
+  font-weight: 700;
   transition: 0.5s;
+  flex-wrap: nowrap;
   &:hover {
     border-bottom: solid ${COLORS.red} 4px;
   }
@@ -133,6 +144,13 @@ const SubTitle = styled.a`
     border-bottom: solid ${COLORS.red} 3px;
   }
   margin-right: 10px;
+`;
+
+const StackTitle = styled.h3`
+  font-weight: 600;
+  margin: 0px;
+  margin-right: 10px;
+  color: ${COLORS.slateGray};
 `;
 
 const Description = styled.p`
