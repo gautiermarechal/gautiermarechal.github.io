@@ -69,6 +69,7 @@ const Content = styled.div`
   width: 700px;
   @media (max-width: 750px) {
     margin: 50px;
+    width: auto;
   }
 `;
 

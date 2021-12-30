@@ -79,6 +79,7 @@ const StackContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 `;
 
 const HeaderContainer = styled.div`
